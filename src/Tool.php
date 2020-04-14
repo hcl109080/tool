@@ -197,4 +197,31 @@ class Tool
 	{
 		return mktime(23,59,59,date('m')-1,date('t',$beginLastmonth),date('Y'));
 	}
+
+	/**
+	 * [format_date 将时间戳格式化成几天前]
+	 * @param  [type] $the_time [时间戳]
+	 * @return [type]           [description]
+	 */
+	public function format_date($the_time)
+	{ 
+		$now_time = time();
+
+		$t = $now_time - $the_time;  
+
+		$f=[
+			'31536000'=>'年',  
+			'2592000'=>'个月',  
+			'604800'=>'星期',  
+			'86400'=>'天',  
+			'3600'=>'小时',  
+			'60'=>'分钟',  
+			'1'=>'秒'  
+		];
+		foreach ($f as $k=>$v){
+			if (0 !=$c=floor($t/(int)$k)) {  
+			    return $c.$v.'前';  
+			}  
+		}
+	}
 }
