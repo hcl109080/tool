@@ -1,0 +1,26 @@
+{
+    "name": "hcl109080/tool",
+    "description": "工具操作",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hcl109080",
+            "email": "haixing12.20@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=7.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "Tool\\":"src"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "Tool\\Tests\\":"tests"
+        }
+    }
+}
