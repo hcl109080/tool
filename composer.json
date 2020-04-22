@@ -15,12 +15,12 @@
     },
     "autoload":{
         "psr-4":{
-            "Tool\\":"src"
+            "Hcl109080\\":"src"
         }
     },
     "autoload-dev":{
         "psr-4":{
-            "Tool\\Tests\\":"tests"
+            "Hcl109080\\Tests\\":"tests"
         }
     }
 }

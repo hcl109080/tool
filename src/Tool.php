@@ -1,6 +1,6 @@
 <?php
 
-namespace Tool;
+namespace Hcl109080;
 
 class Tool
 {
