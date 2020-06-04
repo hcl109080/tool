@@ -10,6 +10,12 @@ class Tool
         return IntConvert::randomKey();
     }
 
+    // 设置生成的随机key
+    public function setKeyMap(array $arr)
+    {
+        IntConvert::$keyMap = $arr;
+    }
+
     // 将数字转换成字符串
     public function intToString($num)
     {

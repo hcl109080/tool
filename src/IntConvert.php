@@ -7,7 +7,7 @@ class IntConvert
     /**
      * KeyMap 在初始时，建议重新生成一下
      */
-    static private $keyMap = [
+    static public $keyMap = [
         'LOXB3V64IGUEYCQF8A72WKSHN915RDZM',
         'DZ7O3VMWHB85CELGI6XQYSRA9N4K1FU2',
         'BZNS6WAG83IDK5M2OCUEF4RLQV917HYX',
