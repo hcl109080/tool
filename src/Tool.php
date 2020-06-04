@@ -4,6 +4,23 @@ namespace Hcl109080;
 
 class Tool
 {
+    // 随机生成随机Key
+    public function getKeyMap()
+    {
+        return IntConvert::randomKey();
+    }
+
+    // 将数字转换成字符串
+    public function intToString($num)
+    {
+        return IntConvert::toString($num);
+    }
+
+    public function stringToInt($str = '')
+    {
+        return IntConvert::toInt($str);
+    }
+
 	/**
 	 * [getSonTree 获取子孙树]
 	 * @param  array   $list     [数据]
